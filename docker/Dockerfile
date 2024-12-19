@@ -79,7 +79,7 @@ ENV DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 RUN dotnet publish Jellyfin.Server --configuration Release \
     --output="${ARTIFACT_DIR}" --self-contained \
-    --runtime linux-${DOTNET_ARCH} -p:DebugSymbols=false -p:DebugType=none
+    --runtime linux-${DOTNET_ARCH} -p:DebugSymbols=false -p:DebugType=none --verbosity detailed
 
 #
 # Build the final combined image

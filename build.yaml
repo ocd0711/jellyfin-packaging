@@ -111,7 +111,7 @@ docker:
       PACKAGE_ARCH: armhf
       QEMU_ARCH: arm
   dockerfile: docker/Dockerfile
-  imagename: jellyfin/jellyfin
+  imagename: ocd0711/jellyfin
 
 # Nuget packages
 nuget:
